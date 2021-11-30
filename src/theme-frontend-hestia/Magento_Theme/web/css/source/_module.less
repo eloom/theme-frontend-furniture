@@ -90,7 +90,7 @@
           }
 
           > a {
-            color: var(--color-one);
+            color: var(--color-four);
           }
         }
       }
@@ -285,7 +285,7 @@
             height: 2.5rem;
           }
         }
-        &.magento {
+        &.eloom {
           margin-left: 4rem;
         }
       }
@@ -718,7 +718,6 @@
   .page-header {
     border: 0;
     margin-bottom: 0;
-    background-color: var(--color-five);
     //border-bottom: 1px solid var(--border-color);
 
     .panel.wrapper {
@@ -772,7 +771,7 @@
           @_link-text-decoration: none,
           @_link-color-visited: @color-gray20,
           @_link-text-decoration-visited: none,
-          @_link-color-hover: @color-gray20,
+          @_link-color-hover: var(--color-five),
           @_link-text-decoration-hover: none,
           @_link-color-active: @color-gray20,
           @_link-text-decoration-active: none
@@ -841,7 +840,9 @@
         padding: 3rem;
         align-items: center;
         flex-direction: row;
-        background-color: var(--color-two);
+        border: 1px solid var(--border-color);
+        border-left: 0;
+        border-right: 0;
 
         .description,
         .content {
@@ -850,6 +851,8 @@
 
           h4 {
             margin-bottom: 0;
+            text-transform: uppercase;
+            color: var(--color-five);
           }
         }
       }

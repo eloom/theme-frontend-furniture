@@ -1,4 +1,4 @@
-@font-family__base: 'Poppins', sans-serif;
+@font-family__base: 'Lato', sans-serif;
 
 // Sizes
 @root__font-size: 62.5%; // Defines ratio between root font size and base font size, 1rem = 10px
@@ -13,7 +13,7 @@
 @font-size__s: @font-size__base * .85;
 @font-size__xs: @font-size__base * .75;
 
-@font-weight__semibold: 500;
+@font-weight__semibold: 400;
 
 //  Line heights
 @line-height__base: 1.428571429;
@@ -37,9 +37,9 @@
 //  ---------------------------------------------
 @heading__margin-bottom__base: 2rem;
 
-@h1__font-size: ceil((@font-size__base * 1.85));
-@h2__font-size: ceil((@font-size__base * 1.50));
-@h3__font-size: ceil((@font-size__base * 1.28));
+@h1__font-size: ceil((@font-size__base * 1.50));
+@h2__font-size: ceil((@font-size__base * 1.25));
+@h3__font-size: ceil((@font-size__base * 1.10));
 @h4__font-size: @font-size__base;
 @h5__font-size: ceil((@font-size__base * .85));
 @h6__font-size: ceil((@font-size__base * .7));
@@ -52,56 +52,39 @@
 //  Common _____________________________________________
 & when (@media-common = true) {
 	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/thin/Poppins-Thin',
+		@family-name: 'Lato',
+		@font-path: '@{baseDir}fonts/lato/thin/Lato-Thin',
 		@font-weight: 100,
 		@font-style: normal,
 		@font-display: swap
 	);
 	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/extralight/Poppins-Extralight',
-		@font-weight: 200,
-		@font-style: normal,
-		@font-display: swap
-	);
-	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/light/Poppins-Light',
+		@family-name: 'Lato',
+		@font-path: '@{baseDir}fonts/lato/light/Lato-Light',
 		@font-weight: 300,
 		@font-style: normal,
 		@font-display: swap
 	);
 	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/regular/Poppins-Regular',
+		@family-name: 'Lato',
+		@font-path: '@{baseDir}fonts/lato/regular/Lato-Regular',
 		@font-weight: 400,
 		@font-style: normal
 	);
-
 	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/medium/Poppins-Medium',
-		@font-weight: 500,
-		@font-style: normal,
-		@font-display: swap
-	);
-
-	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/semibold/Poppins-Semibold',
-		@font-weight: 600,
-		@font-style: normal,
-		@font-display: swap
-	);
-	.lib-font-face(
-		@family-name: 'Poppins',
-		@font-path: '@{baseDir}fonts/poppins/bold/Poppins-Bold',
+		@family-name: 'Lato',
+		@font-path: '@{baseDir}fonts/lato/bold/Lato-Bold',
 		@font-weight: 700,
 		@font-style: normal,
 		@font-display: swap
 	);
-
+	.lib-font-face(
+		@family-name: 'Lato',
+		@font-path: '@{baseDir}fonts/lato/bold/Lato-Black',
+		@font-weight: 900,
+		@font-style: normal,
+		@font-display: swap
+	);
 	h1,h2,h3,h4,h5,h6 {
 		margin-bottom: @heading__margin-bottom__base;
 	}

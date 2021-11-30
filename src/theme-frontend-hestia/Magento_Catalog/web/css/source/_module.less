@@ -40,13 +40,13 @@
         text-transform: uppercase;
 
         & > span {
-            color: var(--text-bg-color);
+            color: var(--color-one);
             background: var(--badge-bg-color);
-            padding: 0 .5rem;
+            padding: .5rem;
         }
     }
     span[data-badge-onsale] {
-        top: 0;
+        top: .5rem;
         right: 0;
         & > span {
             &:after {
@@ -67,6 +67,7 @@
             a {
                 display: block;
                 position: relative;
+                font-weight: 700;
             }
         }
     }
@@ -128,12 +129,6 @@
         margin-bottom: @indent__base;
     }
 
-    .catalog-product-view {
-        .columns {
-            background-color: #FFF;
-        }
-    }
-
     //
     //  Product images general container
     //  ---------------------------------------------
@@ -141,6 +136,8 @@
     .product-image-container {
         max-width: 100%;
         padding: .5rem;
+        display: block;
+        width: auto !important;
     }
 
     .product-image-wrapper {
@@ -210,6 +207,9 @@
             .page-title {
                 line-height: @line-height__base;
                 margin-bottom: @indent__s;
+                font-weight: 700;
+                color: var(--color-five);
+                text-transform: uppercase;
             }
         }
 	.brand {
@@ -564,11 +564,12 @@
 
                 strong {
                     .lib-font-size(26);
-                    font-weight: @font-weight__regular;
+                    font-weight: @font-weight__bold;
                     color: var(--widget-title-color);
                     background-color: #FFF;
                     padding: 0 1rem;
                     position: relative;
+                    text-transform: uppercase;
                 }
             }
             .action.select {
@@ -856,10 +857,15 @@
 
     .page-layout-1column {
         .product-info-main {
-            width: 33%;
+            width: 30%;
+            background-color: var(--color-three);
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+            min-height: 90vh;
+            padding: 2rem 3rem;
         }
         .product.media {
-            width: 57%;
+            width: 60%;
         }
     }
 
