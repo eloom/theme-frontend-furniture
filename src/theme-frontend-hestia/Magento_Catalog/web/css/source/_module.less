@@ -244,14 +244,6 @@
             }
         }
 
-        span.installments {
-            display: block;
-
-            & > span {
-                display: block;
-            }
-        }
-
         .product {
             &.attribute {
                 &.sku {
@@ -348,6 +340,8 @@
 
                 a.location {
                     cursor: pointer;
+                    margin: 1rem 0;
+
                     .lib-icon-font(
                         @icon-location,
                         @_icon-font-size: @icon-font__size
