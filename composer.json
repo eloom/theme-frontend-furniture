@@ -1,7 +1,7 @@
 {
-  "name": "eloom/theme-frontend-hestia",
+  "name": "eloom/theme-frontend-furniture",
   "description": "Tema Héstia para Magento",
-  "homepage": "https://eloom.com.br/store/hestia",
+  "homepage": "https://eloom.com.br/store/furniture",
   "keywords": [
     "magento",
     "magento2",
@@ -33,7 +33,7 @@
   ],
   "autoload": {
     "files": [
-      "src/theme-frontend-hestia/registration.php"
+      "src/theme-frontend-furniture/registration.php"
     ]
   }
 }

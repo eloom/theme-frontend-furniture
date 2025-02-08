@@ -15,6 +15,6 @@ declare(strict_types=1);
 
 \Magento\Framework\Component\ComponentRegistrar::register(
 	\Magento\Framework\Component\ComponentRegistrar::THEME,
-	'frontend/Eloom/hestia',
+	'frontend/Eloom/furniture',
 	__DIR__
 );
